@@ -52,6 +52,11 @@ public class HelloWorld{
          //argument 1 is Nash
          //argument 0 is 4
         
+        ////////////////////////////////////////////////////////
+        //Large Number/Value Notation
+        int otherMoney = 123_456_789;
+        //underscores have no effect on the value, increase readability
+        WriteLine("The large number is {0}",otherMoney);
         
 
         

@@ -1,15 +1,17 @@
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
-
 using System;
+using static System.Console;
 
 public class MenuDrivenCalc{
     public static void Main(string[] args) {
         
         //Inits
-        const int numberAsString_1;
-        const int numberAsString_2;
-        const int operation;
+         string numberAsString_1;
+         string numberAsString_2;
+         string operationAsString;
+         int numberAsInt_1;
+         int numberAsInt_2;
+         int answer;
+  
         
         //Prompt the User
         WriteLine("Please enter the first number: ");
@@ -26,9 +28,13 @@ public class MenuDrivenCalc{
         WriteLine("4. Multiplication");
         
         WriteLine("Enter the number of the desired operation: ");
+        operationAsString = ReadLine();
     
         
         
         
     }//End: main
 }//End:class
+
+//References
+//pg.68 --> prompt user, conversions

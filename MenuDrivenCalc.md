@@ -7,15 +7,17 @@ public class MenuDrivenCalc{
     public static void Main(string[] args) {
         
         //Inits
-        const int number_1;
-        const int number_2;
+        const int numberAsString_1;
+        const int numberAsString_2;
         const int operation;
         
         //Prompt the User
         WriteLine("Please enter the first number: ");
-        number_1 = ReadLine();
+        numberAsString_1 = ReadLine();
+        numberAsInt_1 = Convert.ToInt32(numberAsString_1);
         WriteLine("Please enter the second number: ");
-        number2 = ReadLine();
+        numberAsString_2 = ReadLine();
+        numberAsInt_2 = Convert.ToInt32(numberAsString_2);
         
         WriteLine("Operations");
         WriteLine("1. Addition");
@@ -24,11 +26,6 @@ public class MenuDrivenCalc{
         WriteLine("4. Multiplication");
         
         WriteLine("Enter the number of the desired operation: ");
-        
-        
-        
-        
-        Console.WriteLine ("Try programiz.pro");
     
         
         

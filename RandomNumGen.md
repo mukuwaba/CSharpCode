@@ -18,21 +18,23 @@ public class RandomNumGen{
     Random ranNumberGenerator = new Random();
 
     randomNumber = ranNumberGenerator.Next(1,100);
+    
+    //Test Code --> test is randomNumber was picked
+    WriteLine(" "+randomNumber);
         
+    //Prompt user for input
     Console.WriteLine ("Enter an integer: ");
     pickedNum = ReadLine();
     pickedNumAsInt = Convert.ToInt32(pickedNum);
     
+    //Determine whether correct number was entered
     if(pickedNumAsInt == randomNumber){
-        WriteLine("congrats you have guessed the correct number");
+        WriteLine("Congratulations!!! You have guessed the correct number!");
         
     }//End: if
+    
     else{
         WriteLine("The number you have entered is incorrect. Please Try Again.");
     }//End: else
-   
-        
-   
-   
     }//End:main
 }//End:class

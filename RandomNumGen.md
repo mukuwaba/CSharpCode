@@ -7,19 +7,30 @@ using static System.Console;
 public class RandomNumGen{
     public static void Main(string[] args){
         
+   //Inits
+    int randomNumber;
+    
+    string pickedNum;
+    
+    int pickedNumAsInt;
+   
+   //Generate Random Number
     Random ranNumberGenerator = new Random();
 
-    int randomNumber;
-
-    randomNumber = ranNumberGenerator.Next(MIN, MAX);
+    randomNumber = ranNumberGenerator.Next(1,100);
         
     Console.WriteLine ("Enter an integer: ");
     pickedNum = ReadLine();
-    pickedNum = Convert.ToInt32(numberString);
+    pickedNumAsInt = Convert.ToInt32(pickedNum);
     
-    if(pickedNum == randomNumber){
+    if(pickedNumAsInt == randomNumber){
         WriteLine("congrats you have guessed the correct number");
+        
     }//End: if
+    else{
+        WriteLine("The number you have entered is incorrect. Please Try Again.");
+    }//End: else
+   
         
    
    

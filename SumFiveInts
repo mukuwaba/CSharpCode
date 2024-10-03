@@ -1,0 +1,24 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class SumFiveInts{
+    public static void Main(string[] args){
+        
+        
+        int num1;
+        int num2;
+        int num3;
+        int num4;
+        int num5;
+        
+        Console.WriteLine ("Please enter five integers.");
+        
+        for(){
+        
+        
+        }
+        Console.WriteLine ("Try programiz.pro");
+    }//End:main
+}//End:class

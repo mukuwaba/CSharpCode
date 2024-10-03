@@ -1,0 +1,40 @@
+using System;
+using static System.Console;
+
+public class ArrayEx{
+    public static void Main(string[] args){
+        
+        //Inits
+        int sub = 0;
+        int[] myScores  = {0,0,0,0,0};
+        
+        int checkItOut = 99999;
+        Console.WriteLine("checkItOut = {0}", checkItOut++);
+        Console.WriteLine("New =====>>>> checkItOut = [0].", ++checkItOut);
+        
+        //highlight, control + shift + forward slash to comment it out as a block
+        
+        //Loop through each item in the array
+       /*
+        while (sub<5){
+           
+            //Increment whats already in the array by 3
+            myScores[sub] += 3;
+            
+              
+            Console.WriteLine("myScores[" + sub + "]=" +myScores[sub]);
+            Console.WriteLine("EMBED: myScores[{0}]={1}", sub, myScores[sub]);
+            Console.WriteLine("*****************************");
+            
+            //PRE increment of the counter
+            ++sub;//prefix uniary operator to increment sub
+            
+            int checkItOut = 0
+            
+        }//End: while
+        */
+   //shortcut for commenting out code
+   
+   
+    }//End: main
+}//End: class

@@ -1,5 +1,4 @@
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
+//This program will prompt the user for five integers and report back the sum. 
 
 using System;
 using static System.Console;
@@ -9,11 +8,10 @@ public class SumFiveInts{
         
         
         string numString;
-        int number;
-        int sum;
+        int sum = 0;
         int numAsInt;
 
-        
+        //Prompt user for integers
         Console.WriteLine ("Please enter five integers.");
         
         for(int i = 0; i<5; i++){
@@ -21,14 +19,14 @@ public class SumFiveInts{
             Console.WriteLine("Enter integer: ");
             numString = ReadLine();
             numAsInt = Convert.ToInt32(numString);
-            //su= ++numString
             
-           
-            //sumCounter = Convert.ToInt32(numString);
-        }
+            //Total value and store in "sum"
+            sum = sum + numAsInt;
+            
+        }//End: for
         
-        //sum = Convert.ToInt32(numString);
-       // Console.WriteLine("The sum of the 5 integers is: "+sum)
+        //Report sum back to user
+         Console.WriteLine("The sum of the 5 integers is: " + sum);
         
         
     }//End:main

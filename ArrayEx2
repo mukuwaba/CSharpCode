@@ -1,0 +1,29 @@
+using System;
+using static System.Console;
+
+public class ArrayEx{
+    public static void Main(string[] args){
+        
+        //Inits
+        int sub = 0;
+        int[] myScores  = {0,0,0,0,0};
+        
+        //Loop through each item in the array
+        while (sub<5){
+            
+            //Increment whats already in the array by 3
+            myScores[sub] += 3;
+            
+            
+            Console.WriteLine("myScores[" + sub + "]=" +myScores[sub]);
+            Console.WriteLine("EMBED: myScores[{0}]={1}", sub, myScores[sub]);
+            
+            //PRE increment of the counter
+            ++sub;//prefix uniary operator to increment sub
+            
+        }//End: while
+   
+   
+   
+    }//End: main
+}//End: class

@@ -17,6 +17,7 @@ public class ArrayEx{
             
             Console.WriteLine("myScores[" + sub + "]=" +myScores[sub]);
             Console.WriteLine("EMBED: myScores[{0}]={1}", sub, myScores[sub]);
+            Console.WriteLine("*****************************");
             
             //PRE increment of the counter
             ++sub;//prefix uniary operator to increment sub

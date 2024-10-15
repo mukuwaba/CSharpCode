@@ -22,6 +22,15 @@ public class DogHouseExample{
         Console.WriteLine(myFirstDogHouse.getName());
         //need () because it is a method call that will return information
         
+        DogHouseBlueprint mySecondDoghouse = new DogHouseBlueprint();
+        //mySecondDoghouse is a different object but still from the same class and blueprint
+        Console.WriteLine(mySecondDoghouse.getColor());
+        mySecondDoghouse.setName("Spot");
+        mySecondDoghouse.setColor("Black and White");
+        
+        Console.WriteLine(mySecondDoghouse.getName());
+        Console.WriteLine(mySecondDoghouse.getColor());
+        
        
         
 

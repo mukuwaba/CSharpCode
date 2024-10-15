@@ -7,13 +7,18 @@ public class DogHouseExample{
         
         Console.WriteLine ("We're about to \"build\" a doghouse from a blueprint");
         
+        DogHouseBlueprint myFirstDogHouse = new DogHouseBlueprint
+        //have to give the new object a type = myFirstDogHouse
+        //a reference to the thing you create
+        
         
     }//End: main
 }//End DogHouseExample
 
 public class DogHouseBlueprint{
+    //tells the complier how to 'build' something
     
-    string   name   = ""//Name of the dog
+    string   name   = "";//Name of the dog
     string   color  = "white";
     int      weight = 10;//lbs
     

@@ -7,9 +7,24 @@ public class DogHouseExample{
         
         Console.WriteLine ("We're about to \"build\" a doghouse from a blueprint");
         
-        DogHouseBlueprint myFirstDogHouse = new DogHouseBlueprint
+        DogHouseBlueprint myFirstDogHouse = new DogHouseBlueprint();
         //have to give the new object a type = myFirstDogHouse
         //a reference to the thing you create
+        
+        myFirstDogHouse.setName("Toddy");
+        
+        myFirstDogHouse.setColor("Red");
+        
+        Console.WriteLine(myFirstDogHouse.getColor());
+        //myFirstDogHouse is the variable name
+        //getColor is a method | defaulted to white
+        
+        Console.WriteLine(myFirstDogHouse.getName());
+        //need () because it is a method call that will return information
+        
+       
+        
+
         
         
     }//End: main
@@ -53,5 +68,6 @@ public class DogHouseBlueprint{
         return this.color;
         
     }//end getName
+    
     
 }//End: DogHouseBlueprint

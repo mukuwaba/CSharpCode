@@ -31,11 +31,6 @@ public class DogHouseExample{
         Console.WriteLine(mySecondDoghouse.getName());
         Console.WriteLine(mySecondDoghouse.getColor());
         
-       
-        
-
-        
-        
     }//End: main
 }//End DogHouseExample
 

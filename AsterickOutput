@@ -1,0 +1,22 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using static System.Console;
+
+public class AsteriskOutput{
+    public static void Main(string[] args) {
+        
+        //INITS
+        string numAsString;
+        int numAsInt;
+        
+        //Inform user
+        Console.WriteLine ("This program outputs asterisks ranging from 1 to 100");
+        
+        //Prompt the user for input
+        Console.WriteLine ("Enter a number: ");
+        numAsString = ReadLine();
+        numAsInt = Convert.ToInt32(numAsString);
+    }
+}

@@ -9,6 +9,7 @@ public class AsteriskOutput{
         //INITS
         string numAsString;
         int numAsInt;
+        int caseOutcome=0;
         
         //Inform user
         Console.WriteLine ("This program outputs asterisks ranging from 1 to 100");
@@ -31,32 +32,43 @@ public class AsteriskOutput{
         //Inform user of restraints if number is out of range
         
         if(numAsInt<3){
-            Console.WriteLine (""+numAsInt+" is out of the range 3-27. Please try again.");
-           // Less_than_3 = true;
+          
+            caseOutcome = 1;
+          
         }//End: if
         
         if(numAsInt>27){
-            Console.WriteLine (""+numAsInt+" is out of the range 3-27. Please try again.");
-           // More_than_27 = true;
+           
+           caseOutcome = 2;
+           
         }//End: if
         
         if (numAsInt%2 == 0){
-                Console.WriteLine(" is an even number. Please enter an odd number.");
-          //  Even_number = true;
+            
+            caseOutcome = 3;
+              
         }
         
-        switch(numAsInt){
-            case (numAsInt<3):
+        if (numAsInt == -1){
+            
+            caseOutcome = 4;
+              
+        }
+        
+        switch(caseOutcome){
+            case 1:
                 Console.WriteLine(""+numAsInt+" is out of the range 3-27. Please try again.");
                 break;
-            case (numAsInt<27):
+            case 2:
                 Console.WriteLine(""+numAsInt+" is out of the range 3-27. Please try again.");
                 break;
-            case (numAsInt%2==0):
-                Console.WriteLine(""+numAsInt+" is out of the range 3-27. Please try again.");
+            case 3:
+                Console.WriteLine(""+numAsInt+" is an even number. Please try again.");
                 break;
-            case -1:
-             Console.WriteLine("Program successfully terminated");
+            case 4:
+                Console.WriteLine("Program successfully terminated");
+                break;
+        
             
             
             

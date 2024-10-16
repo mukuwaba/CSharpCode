@@ -18,5 +18,20 @@ public class AsteriskOutput{
         Console.WriteLine ("Enter a number: ");
         numAsString = ReadLine();
         numAsInt = Convert.ToInt32(numAsString);
+        
+        //Space for cleaner interface 
+        Console.WriteLine ("");
+        Console.WriteLine ("");
+    
+        //Inform user of restraints if number is out of range
+        if(numAsInt<1){
+            Console.WriteLine (""+numAsInt+" is out of the range 1-100. Please try again.");
+        }
+        if(numAsInt>100){
+            Console.WriteLine (""+numAsInt+" is out of the range 1-100. Please try again.");
+        }
+        
+        
+        
     }
 }

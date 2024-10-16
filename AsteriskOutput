@@ -65,6 +65,51 @@ public class AsteriskOutput{
            caseOutcome = 6;
         }//End: if
         
+        ///////////////////////////////////////////////////////
+        
+        //Valid Inputs
+        if(numAsInt==3){
+           
+           caseOutcome = 7;
+        }//End: if
+        
+        if(numAsInt==5){
+           
+           caseOutcome = 8;
+        }//End: if
+                
+        if(numAsInt==7){
+           
+           caseOutcome = 9;
+        }//End: if
+                
+        if(numAsInt==9){
+           
+           caseOutcome = 10;
+        }//End: if
+                
+        if(numAsInt==11){
+           
+           caseOutcome = 11;
+        }//End: if
+                
+        if(numAsInt==13){
+           
+           caseOutcome = 12;
+        }//End: if
+                
+        if(numAsInt==15){
+           
+           caseOutcome = 13;
+        }//End: if
+                
+        if(numAsInt==17){
+           
+           caseOutcome = 14;
+        }//End: if
+        
+        
+        
         switch(caseOutcome){
             case 1:
                 Console.WriteLine(""+numAsInt+" is out of the range 3-27. Please try again.");

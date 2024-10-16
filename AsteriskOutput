@@ -1,5 +1,4 @@
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
+//This program will prompt the user to input a number and create a triangle composed of asterisk into the complier.
 
 using System;
 using static System.Console;
@@ -13,23 +12,61 @@ public class AsteriskOutput{
         
         //Inform user
         Console.WriteLine ("This program outputs asterisks ranging from 1 to 100");
+        Console.WriteLine ("Enter an ODD number between 3 and 27.");
+        Console.WriteLine ("The selected number will decide the number of asterisks that make up the base of the triangle.");
         
         //Prompt the user for input
+        Console.WriteLine ("");//Space
         Console.WriteLine ("Enter a number: ");
         numAsString = ReadLine();
         numAsInt = Convert.ToInt32(numAsString);
+        //bool Less_than_3;
+       // bool More_than_27;
+        //bool Even_number;
+        
         
         //Space for cleaner interface 
         Console.WriteLine ("");
-        Console.WriteLine ("");
     
         //Inform user of restraints if number is out of range
-        if(numAsInt<1){
-            Console.WriteLine (""+numAsInt+" is out of the range 1-100. Please try again.");
+        
+        if(numAsInt<3){
+            Console.WriteLine (""+numAsInt+" is out of the range 3-27. Please try again.");
+           // Less_than_3 = true;
+        }//End: if
+        
+        if(numAsInt>27){
+            Console.WriteLine (""+numAsInt+" is out of the range 3-27. Please try again.");
+           // More_than_27 = true;
+        }//End: if
+        
+        if (numAsInt%2 == 0){
+                Console.WriteLine(" is an even number. Please enter an odd number.");
+          //  Even_number = true;
         }
-        if(numAsInt>100){
-            Console.WriteLine (""+numAsInt+" is out of the range 1-100. Please try again.");
+        
+        switch(numAsInt){
+            case (numAsInt<3):
+                Console.WriteLine(""+numAsInt+" is out of the range 3-27. Please try again.");
+                break;
+            case (numAsInt<27):
+                Console.WriteLine(""+numAsInt+" is out of the range 3-27. Please try again.");
+                break;
+            case (numAsInt%2==0):
+                Console.WriteLine(""+numAsInt+" is out of the range 3-27. Please try again.");
+                break;
+            case -1:
+             Console.WriteLine("Program successfully terminated");
+            
+            
+            
         }
+        
+        
+            
+        
+        //for(int j= 0; j < numAsInt && j < 100; j++)
+            //Console.WriteLine("*");
         
         
         

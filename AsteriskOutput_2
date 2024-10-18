@@ -19,7 +19,7 @@ public class AsteriskOutput {
         Console.WriteLine(""); // Space
         Console.WriteLine("TIP: (Enter -1 to terminate program.)"); //Exit option
         
-        // Prompt the user for input
+        // Prompt user for input
         Console.WriteLine(""); // Space
         Console.WriteLine("Enter a number: ");
         numAsString = ReadLine(); //Retrieve input

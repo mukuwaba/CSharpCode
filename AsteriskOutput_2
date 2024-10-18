@@ -33,35 +33,42 @@ public class AsteriskOutput {
         ///////////////////////////////////////////////////////////////
         
         //Define Constraints 
-        if(numAsInt == -1) {
+        
+        if(numAsInt == -1) {//To exit
             caseOutcome = 4;
         }//End: if
-        else if (numAsInt < 3) {
+        
+        
+        else if (numAsInt < 3) {//input cannot be less than 3
             caseOutcome = 1;
         }//End: else if
-        else if (numAsInt > 27) {
+        
+        
+        else if (numAsInt > 27) {//input cannot be more than 27
             caseOutcome = 2;
         } //End: else if
-        else if (numAsInt % 2 == 0) {
+        
+        
+        else if (numAsInt % 2 == 0) {//input cannot be even (divisable by 2)
             caseOutcome = 3;
         } //End: else if
         
         
         else {
             // Valid Inputs
-            if(numAsInt == 3) caseOutcome = 7;
-            if(numAsInt == 5) caseOutcome = 8;
-            if(numAsInt == 7) caseOutcome = 9;
-            if(numAsInt == 9) caseOutcome = 10;
-            if(numAsInt == 11) caseOutcome = 11;
-            if(numAsInt == 13) caseOutcome = 12;
-            if(numAsInt == 15) caseOutcome = 13;
-            if(numAsInt == 17) caseOutcome = 14;
-            if(numAsInt == 19) caseOutcome = 15;
-            if(numAsInt == 21) caseOutcome = 16;
-            if(numAsInt == 23) caseOutcome = 17;
-            if(numAsInt == 25) caseOutcome = 18;
-            if(numAsInt == 27) caseOutcome = 19;
+            if(numAsInt == 3) caseOutcome = 7;      //Base 3 Triangle
+            if(numAsInt == 5) caseOutcome = 8;      //Base 5 Triangle
+            if(numAsInt == 7) caseOutcome = 9;      //Base 7 Triangle
+            if(numAsInt == 9) caseOutcome = 10;     //Base 9 Triangle
+            if(numAsInt == 11) caseOutcome = 11;    //Base 11 Triangle
+            if(numAsInt == 13) caseOutcome = 12;    //Base 13 Triangle
+            if(numAsInt == 15) caseOutcome = 13;    //Base 15 Triangle
+            if(numAsInt == 17) caseOutcome = 14;    //Base 17 Triangle
+            if(numAsInt == 19) caseOutcome = 15;    //Base 19 Triangle
+            if(numAsInt == 21) caseOutcome = 16;    //Base 21 Triangle
+            if(numAsInt == 23) caseOutcome = 17;    //Base 23 Triangle
+            if(numAsInt == 25) caseOutcome = 18;    //Base 25 Triangle
+            if(numAsInt == 27) caseOutcome = 19;    //Base 27 Triangle
         }//End: else
         
         ///////////////////////////////////////////////////////////////
@@ -69,36 +76,43 @@ public class AsteriskOutput {
         
         switch(caseOutcome) {
             case 1:
-                Console.WriteLine(numAsInt + " is out of the range 3-27. Please try again.");
+                Console.WriteLine(numAsInt+ " is out of the range 3-27. Please try again.");
                 break;
+           
             case 2:
-                Console.WriteLine(numAsInt + " is out of the range 3-27. Please try again.");
+                Console.WriteLine(numAsInt+ " is out of the range 3-27. Please try again.");
                 break;
+            
             case 3:
-                Console.WriteLine(numAsInt + " is an even number. Please try again.");
+                Console.WriteLine(numAsInt+ " is an even number. Please try again.");
                 break;
+            
             case 4:
                 Console.WriteLine("Program successfully terminated");
                 break;
-            case 7:
+           
+            case 7: //Base 3
                 Console.WriteLine("   *  ");
                 Console.WriteLine("  ** ");
                 Console.WriteLine(" ***");
                 break;
-            case 8:
+            
+            case 8://Base 5
                 Console.WriteLine("   *   ");
                 Console.WriteLine("  ***  ");
                 Console.WriteLine(" ***** ");
                 
                 break;
-            case 9:
+           
+            case 9://Base 7
                 Console.WriteLine("    *    ");
                 Console.WriteLine("   ***   ");
                 Console.WriteLine("  *****  ");
                 Console.WriteLine(" ******* ");
                 
                 break;
-            case 10:
+            
+            case 10://Base 9
                 Console.WriteLine("     *     ");
                 Console.WriteLine("    ***    ");
                 Console.WriteLine("   *****   ");
@@ -106,7 +120,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" ********* ");
                 
                 break;
-            case 11:
+            
+            case 11://Base 11
                 Console.WriteLine("      *      ");
                 Console.WriteLine("     ***     ");
                 Console.WriteLine("    *****    ");
@@ -115,7 +130,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" *********** ");
                 
                 break;
-            case 12:
+            
+            case 12://Base 13
                 Console.WriteLine("       *       ");
                 Console.WriteLine("      ***      ");
                 Console.WriteLine("     *****     ");
@@ -125,7 +141,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" ************* ");
                 
                 break;
-            case 13:
+            
+            case 13://Base 15
                 Console.WriteLine("        *        ");
                 Console.WriteLine("       ***       ");
                 Console.WriteLine("      *****      ");
@@ -136,7 +153,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" *************** ");
                 
                 break;
-            case 14:
+            
+            case 14://Base 17
                 Console.WriteLine("         *         ");
                 Console.WriteLine("        ***        ");
                 Console.WriteLine("       *****       ");
@@ -148,7 +166,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" ***************** ");
                 
                 break;
-            case 15:
+            
+            case 15://Base 19
                 Console.WriteLine("          *          ");
                 Console.WriteLine("         ***         ");
                 Console.WriteLine("        *****        ");
@@ -161,7 +180,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" ******************* ");
                 
                 break;
-            case 16:
+            
+            case 16://Base 21
                 Console.WriteLine("           *           ");
                 Console.WriteLine("          ***          ");
                 Console.WriteLine("         *****         ");
@@ -175,7 +195,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" ********************* ");
                 
                 break;
-            case 17:
+            
+            case 17://Base 23
                 Console.WriteLine("            *            ");
                 Console.WriteLine("           ***           ");
                 Console.WriteLine("          *****          ");
@@ -190,7 +211,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" *********************** ");
                 
                 break;
-            case 18:
+           
+            case 18://Base 25
                 Console.WriteLine("             *             ");
                 Console.WriteLine("            ***            ");
                 Console.WriteLine("           *****           ");
@@ -206,7 +228,8 @@ public class AsteriskOutput {
                 Console.WriteLine(" ************************* ");
                 
                 break;
-            case 19:
+           
+            case 19://Base 27
                 Console.WriteLine("              *              ");
                 Console.WriteLine("             ***             ");
                 Console.WriteLine("            *****            ");
@@ -224,7 +247,7 @@ public class AsteriskOutput {
                 
                 break;
             default:
-          
+                //No default
                 break;
         }//End: switch
     }//End: main

@@ -1,3 +1,5 @@
+//This program will prompt the user to input a number and create a triangle composed of asterisks into the complier.
+
 using System;
 using static System.Console;
 
@@ -5,9 +7,9 @@ public class AsteriskOutput {
     public static void Main(string[] args) {
         
         // INITS
-        string numAsString;
-        int numAsInt;
-        int caseOutcome = 0;
+        string numAsString; //Store use input as string
+        int numAsInt; //Store user input as integer
+        int caseOutcome = 0;//Use to cycle between cases
         
         // Inform user
         Console.WriteLine("This program outputs asterisks ranging from 1 to 100");

@@ -1,0 +1,229 @@
+using System;
+using static System.Console;
+
+public class AsteriskOutput {
+    public static void Main(string[] args) {
+        
+        // INITS
+        string numAsString;
+        int numAsInt;
+        int caseOutcome = 0;
+        
+        // Inform user
+        Console.WriteLine("This program outputs asterisks ranging from 1 to 100");
+        Console.WriteLine("Enter an ODD number between 3 and 27.");
+        Console.WriteLine("The selected number will decide the number of asterisks that make up the base of the triangle.");
+        
+        Console.WriteLine(""); // Space
+        Console.WriteLine("TIP: (Enter -1 to terminate program.)"); //Exit option
+        
+        // Prompt the user for input
+        Console.WriteLine(""); // Space
+        Console.WriteLine("Enter a number: ");
+        numAsString = ReadLine(); //Retrieve input
+        numAsInt = Convert.ToInt32(numAsString);
+        
+        // Space for cleaner interface 
+        Console.WriteLine("");
+        
+
+    
+        ///////////////////////////////////////////////////////////////
+        
+        //Define Constraints 
+        if(numAsInt == -1) {
+            caseOutcome = 4;
+        }//End: if
+        else if (numAsInt < 3) {
+            caseOutcome = 1;
+        }//End: else if
+        else if (numAsInt > 27) {
+            caseOutcome = 2;
+        } //End: else if
+        else if (numAsInt % 2 == 0) {
+            caseOutcome = 3;
+        } //End: else if
+        
+        
+        else {
+            // Valid Inputs
+            if(numAsInt == 3) caseOutcome = 7;
+            if(numAsInt == 5) caseOutcome = 8;
+            if(numAsInt == 7) caseOutcome = 9;
+            if(numAsInt == 9) caseOutcome = 10;
+            if(numAsInt == 11) caseOutcome = 11;
+            if(numAsInt == 13) caseOutcome = 12;
+            if(numAsInt == 15) caseOutcome = 13;
+            if(numAsInt == 17) caseOutcome = 14;
+            if(numAsInt == 19) caseOutcome = 15;
+            if(numAsInt == 21) caseOutcome = 16;
+            if(numAsInt == 23) caseOutcome = 17;
+            if(numAsInt == 25) caseOutcome = 18;
+            if(numAsInt == 27) caseOutcome = 19;
+        }//End: else
+        
+        ///////////////////////////////////////////////////////////////
+        
+        
+        switch(caseOutcome) {
+            case 1:
+                Console.WriteLine(numAsInt + " is out of the range 3-27. Please try again.");
+                break;
+            case 2:
+                Console.WriteLine(numAsInt + " is out of the range 3-27. Please try again.");
+                break;
+            case 3:
+                Console.WriteLine(numAsInt + " is an even number. Please try again.");
+                break;
+            case 4:
+                Console.WriteLine("Program successfully terminated");
+                break;
+            case 7:
+                Console.WriteLine("   *  ");
+                Console.WriteLine("  ** ");
+                Console.WriteLine(" ***");
+                break;
+            case 8:
+                Console.WriteLine("   *   ");
+                Console.WriteLine("  ***  ");
+                Console.WriteLine(" ***** ");
+                
+                break;
+            case 9:
+                Console.WriteLine("    *    ");
+                Console.WriteLine("   ***   ");
+                Console.WriteLine("  *****  ");
+                Console.WriteLine(" ******* ");
+                
+                break;
+            case 10:
+                Console.WriteLine("     *     ");
+                Console.WriteLine("    ***    ");
+                Console.WriteLine("   *****   ");
+                Console.WriteLine("  *******  ");
+                Console.WriteLine(" ********* ");
+                
+                break;
+            case 11:
+                Console.WriteLine("      *      ");
+                Console.WriteLine("     ***     ");
+                Console.WriteLine("    *****    ");
+                Console.WriteLine("   *******   ");
+                Console.WriteLine("  *********  ");
+                Console.WriteLine(" *********** ");
+                
+                break;
+            case 12:
+                Console.WriteLine("       *       ");
+                Console.WriteLine("      ***      ");
+                Console.WriteLine("     *****     ");
+                Console.WriteLine("    *******    ");
+                Console.WriteLine("   *********   ");
+                Console.WriteLine("  ***********  ");
+                Console.WriteLine(" ************* ");
+                
+                break;
+            case 13:
+                Console.WriteLine("        *        ");
+                Console.WriteLine("       ***       ");
+                Console.WriteLine("      *****      ");
+                Console.WriteLine("     *******     ");
+                Console.WriteLine("    *********    ");
+                Console.WriteLine("   ***********   ");
+                Console.WriteLine("  *************  ");
+                Console.WriteLine(" *************** ");
+                
+                break;
+            case 14:
+                Console.WriteLine("         *         ");
+                Console.WriteLine("        ***        ");
+                Console.WriteLine("       *****       ");
+                Console.WriteLine("      *******      ");
+                Console.WriteLine("     *********     ");
+                Console.WriteLine("    ***********    ");
+                Console.WriteLine("   *************   ");
+                Console.WriteLine("  ***************  ");
+                Console.WriteLine(" ***************** ");
+                
+                break;
+            case 15:
+                Console.WriteLine("          *          ");
+                Console.WriteLine("         ***         ");
+                Console.WriteLine("        *****        ");
+                Console.WriteLine("       *******       ");
+                Console.WriteLine("      *********      ");
+                Console.WriteLine("     ***********     ");
+                Console.WriteLine("    *************    ");
+                Console.WriteLine("   ***************   ");
+                Console.WriteLine("  *****************  ");
+                Console.WriteLine(" ******************* ");
+                
+                break;
+            case 16:
+                Console.WriteLine("           *           ");
+                Console.WriteLine("          ***          ");
+                Console.WriteLine("         *****         ");
+                Console.WriteLine("        *******        ");
+                Console.WriteLine("       *********       ");
+                Console.WriteLine("      ***********      ");
+                Console.WriteLine("     *************     ");
+                Console.WriteLine("    ***************    ");
+                Console.WriteLine("   *****************   ");
+                Console.WriteLine("  *******************  ");
+                Console.WriteLine(" ********************* ");
+                
+                break;
+            case 17:
+                Console.WriteLine("            *            ");
+                Console.WriteLine("           ***           ");
+                Console.WriteLine("          *****          ");
+                Console.WriteLine("         *******         ");
+                Console.WriteLine("        *********        ");
+                Console.WriteLine("       ***********       ");
+                Console.WriteLine("      *************      ");
+                Console.WriteLine("     ***************     ");
+                Console.WriteLine("    *****************    ");
+                Console.WriteLine("   *******************   ");
+                Console.WriteLine("  *********************  ");
+                Console.WriteLine(" *********************** ");
+                
+                break;
+            case 18:
+                Console.WriteLine("             *             ");
+                Console.WriteLine("            ***            ");
+                Console.WriteLine("           *****           ");
+                Console.WriteLine("          *******          ");
+                Console.WriteLine("         *********         ");
+                Console.WriteLine("        ***********        ");
+                Console.WriteLine("       *************       ");
+                Console.WriteLine("      ***************      ");
+                Console.WriteLine("     *****************     ");
+                Console.WriteLine("    *******************    ");
+                Console.WriteLine("   *********************   ");
+                Console.WriteLine("  ***********************  ");
+                Console.WriteLine(" ************************* ");
+                
+                break;
+            case 19:
+                Console.WriteLine("              *              ");
+                Console.WriteLine("             ***             ");
+                Console.WriteLine("            *****            ");
+                Console.WriteLine("           *******           ");
+                Console.WriteLine("          *********          ");
+                Console.WriteLine("         ***********         ");
+                Console.WriteLine("        *************        ");
+                Console.WriteLine("       ***************       ");
+                Console.WriteLine("      *****************      ");
+                Console.WriteLine("     *******************     ");
+                Console.WriteLine("    *********************    ");
+                Console.WriteLine("   ***********************   ");
+                Console.WriteLine("  *************************  ");
+                Console.WriteLine(" *************************** ");
+                
+                break;
+            default:
+          
+                break;
+        }//End: switch
+    }//End: main
+}//End: AsteriskOutput

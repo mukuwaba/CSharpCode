@@ -7,11 +7,13 @@ class CreateEmployee3{
         //Employee()--> blue print
         //aWorker--> variable name for the new instance of the object
         
-        aWorker.IdNumber = 3872;
+        aWorker.setIdNumber(3872);
+        //pass through the set method
+        
+        
         aWorker.Salary = 22.11;
         
-        System.Console.WriteLine("Employee #{0} makes ${1}", aWorker.IdNumber, aWorker.Salary.ToString());
-        
+        System.Console.WriteLine("Employee #{0} makes ${1}", aWorker.getIdNumber(), aWorker.Salary.ToString());
 
     }//Main
 }//End: CreateEmployee3
@@ -23,16 +25,16 @@ class Employee{
     public void setIdNumber(int someValue){
         this.IdNumber = someValue;
         
-    }
+    }//End:setIdNumber
     
     //Access Method
     public int getIdNumber(){
-        return this.IdNumber
-    }
+        return this.IdNumber;
+    }//End:getIdNumber
     
     //instance variables
     private int IdNumber;
     public double Salary;
-    //if IDNumber is private then the method above cannot access it.
+    //if IdNumber is private then the method above cannot access it.
     
 }//End: Employee

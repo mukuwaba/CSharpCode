@@ -26,6 +26,7 @@ class Employee{
     //instance variables
     public int IdNumber {get; set;}
     //tells the complier to create set and gets
+    //shorthand method for set and get methods
     public double Salary;
     //if IdNumber is private then the method above cannot access it.
     

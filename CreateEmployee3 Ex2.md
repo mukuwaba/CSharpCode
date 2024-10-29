@@ -14,6 +14,7 @@ class CreateEmployee3{
         aWorker.Salary = 22.11;
         
         System.Console.WriteLine("Employee #{0} makes ${1}", aWorker.getIdNumber(), aWorker.Salary.ToString());
+        //need to call a method, use () and the get method
 
     }//Main
 }//End: CreateEmployee3

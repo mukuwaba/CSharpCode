@@ -12,5 +12,12 @@ class CreateEmployee3{
         aWorker.Salary = 22.11;
         
     }//Main
-    
 }//End: CreateEmployee3
+
+//This is a blueprint for employee objects
+class Employee{
+    
+    public int IdNumber(get; set;)
+    public double Salary (get; set;)
+    
+}//End: Employee

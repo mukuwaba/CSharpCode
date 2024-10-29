@@ -10,7 +10,7 @@ class CreateEmployee3{
         aWorker.IdNumber = 3872;
         aWorker.Salary = 22.11;
         
-        System.Console.WriteLine("Employee #{0} makes {1}", aWorker.IdNumber, aWorker.Salary.ToString("C"));
+        System.Console.WriteLine("Employee #{0} makes ${1}", aWorker.IdNumber, aWorker.Salary.ToString());
         
 
     }//Main

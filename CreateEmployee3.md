@@ -1,4 +1,3 @@
-using static System.Console;
 
 class CreateEmployee3{
     
@@ -17,7 +16,8 @@ class CreateEmployee3{
 //This is a blueprint for employee objects
 class Employee{
     
-    public int IdNumber(get; set;)
-    public double Salary (get; set;)
+    //instance variables
+    public int IdNumber;
+    public double Salary;
     
 }//End: Employee

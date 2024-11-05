@@ -1,9 +1,6 @@
 //Assignment
 //Create a SoccerPlayer class that contains properties that hold a string for a player’s name and three integers for a jersey number, goals scored, and assists. Create an application named TestSoccerPlayer that instantiates and displays a SoccerPlayer object. 
 //Due 15th
-
-
-
 using System;
 using static System.Console;
 
@@ -23,14 +20,15 @@ public class SoccerPlayer{
     
     Console.WriteLine("Player's Jersey Number: ");
     string JerseyNumAsString = ReadLine();
+    int JerseyNum = Convert.ToInt32(JerseyNumAsString);
     
     Console.WriteLine("Number of Goals Scored: ");
     string Goals_ScoredAsString = ReadLine();
+    int Goals_Scored = Convert.ToInt32(Goals_ScoredAsString);
     
     Console.WriteLine("Number of Assists: ");
     string AssistsAsString = ReadLine();
-    
-    
+    int Assists = Convert.ToInt32(AssistsAsString);
     
     }//End:main
 }//End: class
@@ -52,7 +50,12 @@ public class TestSoccerPlayer{
         string Goals_ScoredAsString;
         string AssistsAsString;
         
+    
+    public void setPlayerFirstName(string newPlayerFirstName){
         
+    this.PlayerFirstName = PlayerFirstName;
+        
+    }//End: setName
 
 }
 //Create Object SoccerPlayer

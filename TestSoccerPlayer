@@ -55,7 +55,27 @@ public class TestSoccerPlayer{
         
     this.PlayerFirstName = PlayerFirstName;
         
-    }//End: setName
+    }//End: setPlayerFirstName
+    
+    public void setPlayerLastName(string newPlayerLastName){
+        
+    this.PlayerLastName = PlayerLastName;
+    }//End: setPlayerLastName
+    
+    public void setJerseyNum(int newJerseyNum){
+        
+    this.JerseyNum = JerseyNum;
+    }//End: setJerseyNum
+    
+    public void setGoals_Scored(int newGoals_Scored){
+        
+    this.Goals_Scored = Goals_Scored;
+    }//End: setGoals_Scored
+    
+    public void setAssistsAsString(int newAssistsAsString){
+        
+    this.AssistsAsString = AssistsAsString;
+    }//End: setAssistsAsString
 
-}
+}//End: TestSoccerPlayer
 //Create Object SoccerPlayer

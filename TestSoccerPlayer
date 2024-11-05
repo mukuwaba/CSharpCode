@@ -1,0 +1,20 @@
+//Assignment
+//Create a SoccerPlayer class that contains properties that hold a string for a player’s name and three integers for a jersey number, goals scored, and assists. Create an application named TestSoccerPlayer that instantiates and displays a SoccerPlayer object. 
+//Due 15th
+
+using System;
+
+public class TestSoccerPlayerBlueprint{
+  
+        
+        //Inits
+        string PlayerFirstName = "";
+        string PlayerLastName= "";
+        int JerseyNum;
+        int Goals_Scored;
+        int Assists;
+        
+        SoccerPlayerBlueprint new
+        
+
+}

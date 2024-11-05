@@ -5,25 +5,30 @@
 
 
 using System;
+using static System.Console;
 
 public class SoccerPlayer{
     public static void Main(string[] args){
     
     TestSoccerPlayer SoccerPlayerObject = new TestSoccerPlayer();
     
-    SoccerPlayerObject
+    //SoccerPlayerObject
     
     //Prompt user to input values
     Console.WriteLine("Player's First Name: ");
-    PlayerFirstName = ReadLine();
+    string PlayerFirstName = ReadLine();
     
     Console.WriteLine("Player's Last Name: ");
+    string PlayerLastName = ReadLine();
     
     Console.WriteLine("Player's Jersey Number: ");
+    string JerseyNumAsString = ReadLine();
     
     Console.WriteLine("Number of Goals Scored: ");
+    string Goals_ScoredAsString = ReadLine();
     
     Console.WriteLine("Number of Assists: ");
+    string AssistsAsString = ReadLine();
     
     
     
@@ -42,6 +47,10 @@ public class TestSoccerPlayer{
         int JerseyNum;
         int Goals_Scored;
         int Assists;
+        
+        string JerseyNumAsString;
+        string Goals_ScoredAsString;
+        string AssistsAsString;
         
         
 

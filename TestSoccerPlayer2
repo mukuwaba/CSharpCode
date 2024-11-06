@@ -28,11 +28,20 @@ public class SoccerPlayer{
     Console.WriteLine("Number of Assists: ");
     int Assists = Convert.ToInt32(ReadLine());
     
-    Console.WriteLine(SoccerPlayerObject.getPlayerFirstName());
-    Console.WriteLine(SoccerPlayerObject.getPlayerLastName());
-    Console.WriteLine(SoccerPlayerObject.getJerseyNum());
-    Console.WriteLine(SoccerPlayerObject.getGoals_Scored());
-    Console.WriteLine(SoccerPlayerObject.getAssists());
+    ////////////////////////////////////////////////////
+    //Sets
+    SoccerPlayerObject.setPlayerFirstName(PlayerFirstName);
+    SoccerPlayerObject.setPlayerLastName(PlayerLastName);
+    SoccerPlayerObject.setJerseyNum(JerseyNum);
+    SoccerPlayerObject.setGoals_Scored(GoalsScored);
+    SoccerPlayerObject.setAssists(Assists);
+    
+    //Output values to the console
+    Console.WriteLine("Player First Name: "+SoccerPlayerObject.getPlayerFirstName());
+    Console.WriteLine("Player Last Name: "+SoccerPlayerObject.getPlayerLastName());
+    Console.WriteLine("Jersey Number: "+SoccerPlayerObject.getJerseyNum());
+    Console.WriteLine("Number of Goals Scored: "+SoccerPlayerObject.getGoals_Scored());
+    Console.WriteLine("Number of Assists: "+SoccerPlayerObject.getAssists());
     
     }//End:main
 }//End: class
@@ -55,28 +64,28 @@ public class TestSoccerPlayer{
     
     public void setPlayerFirstName(string newPlayerFirstName){
         
-    this.PlayerFirstName = PlayerFirstName;
+    this.PlayerFirstName = newPlayerFirstName;
         
     }//End: setPlayerFirstName
     
     public void setPlayerLastName(string newPlayerLastName){
         
-    this.PlayerLastName = PlayerLastName;
+    this.PlayerLastName = newPlayerLastName;
     }//End: setPlayerLastName
     
     public void setJerseyNum(int newJerseyNum){
         
-    this.JerseyNum = JerseyNum;
+    this.JerseyNum = newJerseyNum;
     }//End: setJerseyNum
     
     public void setGoals_Scored(int newGoals_Scored){
         
-    this.Goals_Scored = Goals_Scored;
+    this.Goals_Scored = newGoals_Scored;
     }//End: setGoals_Scored
     
     public void setAssists(int newAssists){
         
-    this.Assists = Assists;
+    this.Assists = newAssists;
     }//End: setAssistsAsString
     
     /////////////////////////////////////////////////////////////////////

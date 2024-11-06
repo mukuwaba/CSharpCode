@@ -20,7 +20,7 @@ public class SoccerPlayer{
     string PlayerLastName = ReadLine();
     
     Console.WriteLine("Player's Jersey Number: ");
-    int jerseyNum = Convert.ToInt32(ReadLine());
+    int JerseyNum = Convert.ToInt32(ReadLine());
     
     Console.WriteLine("Number of Goals Scored: ");
     int Goals_Scored = Convert.ToInt32(ReadLine());
@@ -33,7 +33,7 @@ public class SoccerPlayer{
     SoccerPlayerObject.setPlayerFirstName(PlayerFirstName);
     SoccerPlayerObject.setPlayerLastName(PlayerLastName);
     SoccerPlayerObject.setJerseyNum(JerseyNum);
-    SoccerPlayerObject.setGoals_Scored(GoalsScored);
+    SoccerPlayerObject.setGoals_Scored(Goals_Scored);
     SoccerPlayerObject.setAssists(Assists);
     
     //Output values to the console
@@ -98,7 +98,7 @@ public class TestSoccerPlayer{
     
     public string getPlayerLastName(){
         
-        return this.PlayerFirstName;
+        return this.PlayerLastName;
         
     }//end getPlayerLastName
     

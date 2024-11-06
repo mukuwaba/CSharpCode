@@ -31,6 +31,8 @@ public class SoccerPlayer{
     string AssistsAsString = ReadLine();
     int Assists = Convert.ToInt32(AssistsAsString);
     
+    Console.WriteLine(SoccerPlayerObject.getPlayerFirstName());
+    
     }//End:main
 }//End: class
 
@@ -51,6 +53,8 @@ public class TestSoccerPlayer{
         string Goals_ScoredAsString;
         string AssistsAsString;
         
+    ///////////////////////////////////////////////////////////////////////
+    //Set Methods
     
     public void setPlayerFirstName(string newPlayerFirstName){
         
@@ -77,6 +81,20 @@ public class TestSoccerPlayer{
         
     this.AssistsAsString = AssistsAsString;
     }//End: setAssistsAsString
+    
+    /////////////////////////////////////////////////////////////////////
+    //Get Methods
+    public string getPlayerFirstName(){
+        
+        return this.PlayerFirstName;
+        
+    }//end getPlayerFirstName
+    
+    public string getPlayerLastName(){
+        
+        return this.PlayerFirstName;
+        
+    }//end getPlayerLastName
 
 }//End: TestSoccerPlayer
 //Create Object SoccerPlayer

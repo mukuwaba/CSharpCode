@@ -20,18 +20,19 @@ public class SoccerPlayer{
     string PlayerLastName = ReadLine();
     
     Console.WriteLine("Player's Jersey Number: ");
-    string JerseyNumAsString = ReadLine();
-    int JerseyNum = Convert.ToInt32(JerseyNumAsString);
+    int jerseyNum = Convert.ToInt32(ReadLine());
     
     Console.WriteLine("Number of Goals Scored: ");
-    string Goals_ScoredAsString = ReadLine();
-    int Goals_Scored = Convert.ToInt32(Goals_ScoredAsString);
+    int Goals_Scored = Convert.ToInt32(ReadLine());
     
     Console.WriteLine("Number of Assists: ");
-    string AssistsAsString = ReadLine();
-    int Assists = Convert.ToInt32(AssistsAsString);
+    int Assists = Convert.ToInt32(ReadLine());
     
     Console.WriteLine(SoccerPlayerObject.getPlayerFirstName());
+    Console.WriteLine(SoccerPlayerObject.getPlayerLastName());
+    Console.WriteLine(SoccerPlayerObject.getJerseyNum());
+    Console.WriteLine(SoccerPlayerObject.getGoals_Scored());
+    Console.WriteLine(SoccerPlayerObject.getAssists());
     
     }//End:main
 }//End: class
@@ -45,13 +46,9 @@ public class TestSoccerPlayer{
         //Inits
         string PlayerFirstName = "";
         string PlayerLastName= "";
-        int JerseyNum;
-        int Goals_Scored;
-        int Assists;
-        
-        string JerseyNumAsString;
-        string Goals_ScoredAsString;
-        string AssistsAsString;
+        int JerseyNum = 0;
+        int Goals_Scored = 0;
+        int Assists = 0;
         
     ///////////////////////////////////////////////////////////////////////
     //Set Methods
@@ -77,9 +74,9 @@ public class TestSoccerPlayer{
     this.Goals_Scored = Goals_Scored;
     }//End: setGoals_Scored
     
-    public void setAssistsAsString(int newAssistsAsString){
+    public void setAssists(int newAssists){
         
-    this.AssistsAsString = AssistsAsString;
+    this.Assists = Assists;
     }//End: setAssistsAsString
     
     /////////////////////////////////////////////////////////////////////
@@ -95,6 +92,25 @@ public class TestSoccerPlayer{
         return this.PlayerFirstName;
         
     }//end getPlayerLastName
+    
+      public int getJerseyNum(){
+        
+        return this.JerseyNum;
+        
+    }//end getJerseyNum
+    
+      public int getGoals_Scored(){
+        
+        return this.Goals_Scored;
+        
+    }//end getGoals_Scored
+    
+      public int getAssists(){
+        
+        return this.Assists;
+        
+    }//end getAssists
+    
 
 }//End: TestSoccerPlayer
 //Create Object SoccerPlayer

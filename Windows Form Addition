@@ -67,8 +67,6 @@ namespace WindowsFormsApp2
 
         private void btnAddition_Click(object sender, EventArgs e)
         {
-            //addition button between two text boxes
-            
             //Get the numbers from the user
             int firstNum = int.Parse(txtFirst.Text);
             int ThisIsMySecondNum = int.Parse(txtSecond.Text);
@@ -80,6 +78,16 @@ namespace WindowsFormsApp2
             //int secondNum = int.Parse(txtSecondNum.Text);
 
             LblSum.Text = firstNum.ToString();
+
+
+
+            //////////////////////////////////////////////////////////////// 
+            // int firstNumber = 0;
+            //  int secondNumber = 0;
+
+            // firstNumber = int.Parse((string)txtFirst.Text.ToString());
+
+            // LblSum.Text = firstNum.ToString();
         }
     }
 }

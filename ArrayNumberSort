@@ -30,7 +30,14 @@ class ArraySort {
             Console.Write(numbers[i]+" ");
         }//End: for
         
-        Console.WriteLine("\n")
+        Console.WriteLine("\n");//Space(x2)
+        
+        //////////////////////////////////////////////////////////////////
+                        //--Sort Index Values--//
+        
+        //Even Index Values
+        //Ascending Order
+        
         
     }//End: main
 }//End: ArraySort

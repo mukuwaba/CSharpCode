@@ -4,7 +4,7 @@ class ArraySort {
     public static void Main(string[] args) {
         
         //Inform User
-        Console.WriteLine
+        Console.WriteLine("This program will sort numbers inputted by the user based on the index position within the array. \nEven index positions will be sorted in ascending order (lowest values to highest values). \nOdd index positions will be sorted in descending order (highest values to lowest values)\n\n");
         
         //Prompt user for array size
         Console.WriteLine("Please enter the size of the array: ");

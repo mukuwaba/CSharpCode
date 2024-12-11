@@ -15,17 +15,22 @@ class ArraySort {
         int[] numbers = new int[arraySize];
         
         //Prompt the user for the values
-        for(int i = 1; i<arraySize+1; i++){
+        //Loop until all numbers are entered
+        for(int i = 0; i<arraySize; i++){
             
-            //initalized i at one to start number count at 1 instead of O
-            //additional value counterbalanced by 'i<arraySize + 1'
             
-            Console.WriteLine("Enter number "+i+":" );
+            Console.WriteLine("Enter number "+i+1+":" );
             numbers[i] = Convert.ToInt32(Console.ReadLine());//Store in array
             
-            
-        }
+        }//End: for
+        
+        //Inform user of chosen numbers
+        Console.WriteLine("You have entered the following numbers:");
+        for (int i = 0; i < arraySize; i++){
+            Console.Write(""+numbers[i]);
+        }//End: for
+        
         
        
-    }
-}
+    }//End: main
+}//End: ArraySort

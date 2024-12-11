@@ -33,11 +33,28 @@ class ArraySort {
         Console.WriteLine("\n");//Space(x2)
         
         //////////////////////////////////////////////////////////////////
-                        //--Sort Index Values--//
+                            //--Sort Index Values--//
         
-        //Even Index Values
+        
+        //----Even Index Position Values
         //Ascending Order
         
+        //Calculate number of even index positions
+        int EvenAmt = (arraySize+1)/2; // Number of even index positions
         
+        //New Array for odd index position values
+        //Size defined by 'evenAmt'
+        int[] evenNumbers = new int[EvenAmt];
+        
+        
+        //---Odd Index Position Values
+        //Descending Order
+        
+        //Calculate number of odd index position values
+        int OddAmt = (arraySize / 2);  
+        
+        //New Array for odd index position values,
+        //Size defined by 'OddAmt'
+        int[] oddNumbers = new int[OddAmt];
     }//End: main
 }//End: ArraySort

@@ -27,10 +27,10 @@ class ArraySort {
         //Inform user of chosen numbers
         Console.WriteLine("You have entered the following numbers:");
         for (int i = 0; i < arraySize; i++){
-            Console.Write(""+numbers[i]);
+            Console.Write(numbers[i]+" ");
         }//End: for
         
+        Console.WriteLine("\n")
         
-       
     }//End: main
 }//End: ArraySort

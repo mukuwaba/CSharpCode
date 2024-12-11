@@ -1,0 +1,31 @@
+using System;
+
+class ArraySort {
+    public static void Main(string[] args) {
+        
+        //Prompt user for array size
+        Console.WriteLine("Please enter the size of the array: ");
+        int arraySize = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("\n");
+        
+        Console.WriteLine("Please enter "+arraySize+" numbers:");
+        
+        //Create a new array with the size defined by 'arraySize'
+        int[] numbers = new int[arraySize];
+        
+        //Prompt the user for the values
+        for(int i = 1; i<arraySize+1; i++){
+            
+            //initalized i at one to start number count at 1 instead of O
+            //additional value counterbalanced by 'i<arraySize + 1'
+            
+            Console.WriteLine("Enter number "+i+":" );
+            numbers[i] = Convert.ToInt32(Console.ReadLine());//Store in array
+            
+            
+        }
+        
+       
+    }
+}

@@ -3,6 +3,9 @@ using System;
 class ArraySort {
     public static void Main(string[] args) {
         
+        //Inform User
+        Console.WriteLine
+        
         //Prompt user for array size
         Console.WriteLine("Please enter the size of the array: ");
         int arraySize = Convert.ToInt32(Console.ReadLine());
@@ -25,7 +28,7 @@ class ArraySort {
         }//End: for
         
         //Inform user of chosen numbers
-        Console.WriteLine("You have entered the following numbers:");
+        Console.WriteLine("\n\nYou have entered the following numbers:");
         for (int i = 0; i < arraySize; i++){
             Console.Write(numbers[i]+" ");
         }//End: for
@@ -40,7 +43,7 @@ class ArraySort {
         //Ascending Order
         
         //Calculate number of even index positions
-        int EvenAmt = (arraySize+1)/2; // Number of even index positions
+        int EvenAmt = (arraySize+1)/2;
         
         //New Array for odd index position values
         //Size defined by 'evenAmt'
@@ -56,5 +59,61 @@ class ArraySort {
         //New Array for odd index position values,
         //Size defined by 'OddAmt'
         int[] oddNumbers = new int[OddAmt];
+        
+        //////////////////////////////////////////////////////////////////////
+
+        
+        //distinguish and insert even and odd values into corresponding array
+        int j = 0; //counter for incrementing through even index positions
+        int k = 0; //counter for incrementing through odd index positions
+        
+        for(int i =0; i<arraySize; i++){
+            if (i%2 == 0){
+                
+                evenNumbers[j++] = numbers[i];
+             
+            }//End: if 
+            
+            else{
+                
+                oddNumbers[k++] = numbers[i];
+                
+            }//End: else
+        }//End: for
+
+        //Sort even values in ascending order
+        Array.Sort(evenNumbers);
+
+        //Sort odd values in descending order
+        Array.Sort(oddNumbers);
+        Array.Reverse(oddNumbers);
+
+        //Join even and odd values in ArraySort
+        j = 0;
+        k = 0;
+        
+        for(int i= 0; i<arraySize; i++){
+            if(i%2== 0){
+                
+                numbers[i]=evenNumbers[j++];
+                
+            }//End:if 
+            
+            else{
+                
+                numbers[i]=oddNumbers[k++];
+                
+            }//End else
+        }//End: for
+
+        // Print the sorted array
+        
+        Console.WriteLine("\n\n The array with sorted even and odd indexes:");
+        for (int i = 0; i < arraySize; i++){
+            Console.Write(numbers[i] + " ");
+        
+            
+        }//End: for
+        
     }//End: main
 }//End: ArraySort
